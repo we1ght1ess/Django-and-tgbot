@@ -78,6 +78,7 @@ class DirectionBot:
             self.bot.send_message(message.chat.id, response_text)
         else:
             self.bot.send_message(message.chat.id, "Мы не можем подобрать направление для вас.")
+            recommended_direction = 'Не подобрали направление'
 
         additional_question = "Хотели бы вы получать интересную информацию о поступлении в вуз?"
         markup = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
