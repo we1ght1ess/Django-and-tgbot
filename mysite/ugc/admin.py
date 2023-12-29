@@ -27,3 +27,4 @@ class ProfileAdmin(admin.ModelAdmin):
     show_message.short_description = "Создать рассылку"
 
     actions = [show_message]
+    
